@@ -7,6 +7,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 // ─────────────────────────────────────────────────────────
 
 type Tag =
+| "All"
 | "Education Finance"
 | "Enrollment Equity"
 | "Comparative Policy"
@@ -1846,7 +1847,8 @@ export default function Page() {
       <div className="contact-section" id="contact">
         <div className="contact-bg-text" aria-hidden="true">Hello</div>
         <div className="contact-inner">
-          <Reveal style={{ position: "relative", zIndex: 1 } as React.CSSProperties}>
+        <div style={{ position: "relative", zIndex: 1 }}>
+        <Reveal>
             <h2 className="contact-headline">
               Interested in 
               <br />
@@ -1870,6 +1872,7 @@ export default function Page() {
               </div>
             </div>
           </Reveal>
+          </div>
           <div className="contact-links">
             <a href="https://www.linkedin.com/in/yuling-xu-5b8523327/"
   target="_blank"
