@@ -7,12 +7,14 @@ import { useState, useEffect, useRef, useCallback } from "react";
 // ─────────────────────────────────────────────────────────
 
 type Tag =
-  | "All"
-  | "Education Finance"
-  | "Enrollment Equity"
-  | "Comparative Policy"
-  | "Human Capital"
-  | "Arts & Education";
+| "Education Finance"
+| "Enrollment Equity"
+| "Comparative Policy"
+| "Human Capital"
+| "Arts & Education"
+| "Labor Economics"
+| "Gender & Work"
+| "AI Policy";
 
 interface Paper {
   id: number;
